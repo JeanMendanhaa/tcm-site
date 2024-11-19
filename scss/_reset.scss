@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Archivo', sans-serif;
+  color: $color-white;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include responsive(768px) {
+    font-size: 50%;
+  }
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+body {
+  background-color: #000000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  overflow-x: hidden;
+}
